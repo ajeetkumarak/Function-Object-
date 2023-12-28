@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Classes & Inheritance</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+.hero {
+        width:100%;
+        height: 100vh;
+        background-image: url("background.png");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+}
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+.navbar {
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.content {
+    color: #fbfcfd;
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+}
+h1{
+    font-size: 50px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+.side-bar {
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#00545d,#000729);
+    right: 0;
+    top: 0;
+}
+.programming {
+    margin: 3px;padding: 2px;
+}
+.javascript {
+    position: relative;
+    top: 270px;
+}
+.about{
+    position: relative;
+    top: 300px;
+    line-height: 25px;
+}
+h2{
+    text-align: center;
+
+    color: rgb(7, 50, 61);
+    left: 20px;
+}
+li{
+    color: rgb(152, 152, 152);
+}
+.ways{
+    position: relative;
+    top: 270px;
+    
+}
+.fewways {
+    position: relative;
+    left: 185px;
+    line-height: 25px;
+}
+
+
+</style>
+<body>
+    
+    
+<div class="hero">
+    <div class="navbar">
+        <img src="logo.png" alt="logo hai" class="logo">
+        <button type="button">Sign Up</button>
+    </div>
+    <div class="content">
+        <!-- <small>Welcome to our</small> -->
+        <h1> SYNCHRONOUS V/S ASYNCHRONOUS <br> PROGRAMMING</h1>
+        <!-- <button type="button">Take a tour</button> -->
+    </div>
+    <div class="side-bar">
+        <img src="menu.png" class="menu" alt="menucard">
+        <div class="social-links">
+            <img src="fb.png" alt="">
+            <img src="ig.png" alt="">
+            <img src="tw.png" alt="">
+        </div>
+        <div class="useful-links">
+            <img src="share.png" alt="">
+            <img src="info.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="programming content">
+
+    <ul type="square" class="javascript programming about">
+        <li>Any computation we do requires processor for our javascript engine to get the job done. </li>
+        <li>Many requests interact with things outside of the processor. For example, they may communicate over a network or request data from the storage disk.</li>
+        <li>This is a lot slower than getting it from memory.</li>
+        <li>We don't want our processor to sit idle when such things are happening..</li>
+    </ul>
+    <ul type="square" class="javascript about">
+        <li>An <b> <i> Asynchronous</i></b> model allows multiple things to happen at the same time.</li>
+        <li>In a<b> <i>Synchronous</i></b> programming model, things happen one at a time.</li>
+        <li>When you call a function that performs a long action. it returns only when the action has finished so that it can return the result.</li>
+        <li>This stops your program for the time the action takes.</li>
+    </ul>
+    <br><br>
+    <div class="ways">
+    <h2>
+        Few Ways to Write ASYNCHRONOUS CODE in Javascript.....
+    </h2>
+    <ul class="fewways">
+        <li>Async/await</li>
+        <li>Callbacks</li>
+        <li>promises</li>
+    </ul>
+</div>
+</div>
+
+    <script src="ES6.js"></script>
+</body>
+</html>
